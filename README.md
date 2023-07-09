@@ -10,6 +10,7 @@ DESCRIPCIÓN
 Demostración de como se puede capturar los eventos de arranque de la aplicación, creación de la sesión de usuario y destrucción
 de la sesión del usuario.
 
+Nota: Si se desea ejecutar con una versión de ApacheTomcat superior al 9, es necesario sustituir la dependencia javax por jakarta y actualizar en el web.xml la versión de la faceta (4.0 o superior)
 ----------------------------------------------------------------------------------------------------------------------
 ESPECIFICACIÓN TÉCNICA DE DESARROLLO UTILIZADO
 ----------------------------------------------------------------------------------------------------------------------
