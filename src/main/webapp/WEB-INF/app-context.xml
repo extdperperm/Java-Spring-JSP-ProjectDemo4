@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.1.xsd
+">
+
+	<!-- Se indica a spring que escaneé las anotaciones de las clases que estén bajo el paquete es.dsw.events para incorporar
+	     los componentes señalados y que se pueden convertir en beans del contenedor de contexto-->
+	<context:component-scan base-package="es.dsw.events"></context:component-scan>
+	
+
+</beans>
+
+<!-- Observación: Puede observar, que en en este esquema, los .xsd están versionados (-3.1.xsd). Realmente, a l ahora de configurar estos contenedores
+de spring vía .xml, puede optar por no indicar versiones (ej: session-context.xml) con lo cual tomará la última. O puede versionar, con lo
+cual garantizará que está tomando siempre una versión determinada, dandole más estabilidad a su configuración. -->
